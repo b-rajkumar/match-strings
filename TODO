@@ -1,0 +1,28 @@
+What is the problem ?
+- Given two files consists of strings we have to match strings from each file.
+
+What is the matching condition? 
+- The last four characters of the string from first file will be the last four characters of the string from second file.
+
+ Ex: 70oklw -> string from file 1
+     oklw737 -> string from file 2
+     
+ These two strings are matched and the expected string is -> 79oklw737.
+
+How the input should be arranged ?
+- file1 strings -> [string1 ,  string2, string3, ..., stringN]
+- file2 strings -> {
+  oklw: 737, 
+  bdxv: 211, 
+  .
+  .
+  .
+  first four characters of string : remaining characters of the string
+}
+
+What is the expected output?
+79oklw737
+381jstc331
+453usja514
+535bdxv211
+

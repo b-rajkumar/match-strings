@@ -7,8 +7,11 @@ const main = function () {
 
   const firstFileContents = fs.readFileSync(firstFile, "utf-8");
   const secondFileContents = fs.readFileSync(secondFile, "utf-8");
+  const timeBeforeCall = new Date().valueOf();
   const matchedStrings = matchStrings(firstFileContents, secondFileContents);
-  console.log(matchedStrings);
+  const timeAfterCall = new Date().valueOf();
+  const timeTaken = timeAfterCall - timeBeforeCall;
+  console.log(timeTaken);
 };
 
 main();
